@@ -1,0 +1,14 @@
+{
+    "name": "glyndun/press",
+    "description": "An elegant markdown-powered blog for the laravel framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "glyndun",
+            "email": "glynduncarias@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "orchestra/testbench": "^6.18"
+    }
+}
