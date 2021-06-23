@@ -2,16 +2,13 @@
 
 namespace glyndun\Press\Tests;
 
-use Orchestra\Testbench\TestCase;
-use Parsedown;
+use glyndun\Press\MarkdownParser;
 
 class MarkdownTest extends TestCase
 {
     /** @test */
-    public function experiment()
+    public function simple_markdown_is_parsed()
     {
-        $parsedown = new Parsedown();
-
-        dd($parsedown->text('# Heading'));
+        $this->assertEquals('<h1>Heading</h1>', MarkdownParser::parse('# Heading'));
     }
 }

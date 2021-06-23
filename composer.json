@@ -10,7 +10,8 @@
     ],
     "require-dev": {
         "orchestra/testbench": "^6.18",
-        "mockery/mockery": "^1.4"
+        "mockery/mockery": "^1.4",
+        "laravel/legacy-factories": "^1.1"
     },
     "autoload": {
         "psr-4": {
@@ -26,5 +27,12 @@
         "erusev/parsedown": "^1.7",
         "ext-json": "^8.0",
         "php": "^8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "glyndun\\Press\\PressBaseServiceProvider"
+            ]
+        }
     }
 }
